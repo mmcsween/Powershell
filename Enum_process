@@ -1,2 +1,3 @@
+#Get all running processes 
 $processes = get-processes
 $processes

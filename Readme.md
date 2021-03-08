@@ -1,9 +1,16 @@
-#Projet test
+# Projet test
 
 Ceci est le premier **projet** 
 Ceci est un `Projet Git Hub` 
 
+*italic* 
+
 ```powershell
 #Ceci est un bloc de code d'example
-get-childItem
+$result = get-Process 
+$result 
+
 ```
+# gros titre
+## Sous titre
+### sous-sous titre

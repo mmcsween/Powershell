@@ -1,3 +1,3 @@
 #Get all running processes 
-$processes = get-processes
+$processes = get-processes | order-object cpu -desc | Select-Object -first 5 
 $processes

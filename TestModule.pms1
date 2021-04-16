@@ -1,0 +1,26 @@
+Function get-Test
+{
+<#
+.Synopsis
+   Module to add new group Policy Object.
+.DESCRIPTION
+   This module adds new Group Policy Object
+.EXAMPLE
+   Add-TechCustomProfile -PolicyName "Policy_Name" -PolicyDescription "Describe the Policy" -PolicyItem "Policy item (Must be written exactly as appear in Group Policy in Azure" -policyType "Machine" -Status "true" -presentationValue Json_Value
+.EXAMPLE
+   $profiles = Get-TechADMXProfile
+   $profiles | ForEach-Object {Add-TechADMXProfile -PolicyName $_.name -PolicyDescription $_.description -PolicyItem $_.Displayname -policyType $_.Classtype -Status $_.Enabled -presentationValue $_.value}
+#>
+    Param
+    (
+        # Description d’aide param1
+        [Parameter(Mandatory=$true)]
+        [ValidateSet("AllUsers", "AllDevice", "Group")]
+        $AssigntmentType
+                
+    )
+
+    write-host 'This Works!'
+
+}
+
